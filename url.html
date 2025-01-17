@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>URL Manipulation Attacks</title>
+  <link href="assets/img/favicon.png" rel="icon"><!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"><!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"><!-- Template Main CSS File -->
+  <link href="assets/css/url.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+  <meta name="keywords" content="Computer Science,Education,Ethical Hacking,Cyber Security,Hacking,CSS,Java, HTML,JavaScript,Bootstrap, Tutorials, Articles, Programming, learning, examples, code,tech,new technology,science technology,cgdefense,url manipulation, trial and Error method, directory traversal method, the Essence of url" />
+  <meta name="description" content="The URL (Uniform Resource Locator) of a web application is the vector that makes it possible to indicate the requested resource. This article will show you how to protect yourself against URL manipulation attacks.">
+</head>
+
+<body>
+  <!-- ======= Hero Section ======= -->
+
+
+  <section class="d-flex align-items-center" id="hero">
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <div class="row">
+        <div class="col-xl-6">
+          <h1>URL Manipulation Attacks</h1>
+
+
+          <p>The URL (Uniform Resource Locator) of a web application is the vector that makes it possible to indicate the requested resource. This article will show you how to protect yourself against URL manipulation attacks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero -->
+
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+
+
+    <section class="about section-bg" id="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row no-gutters">
+          <div class="content">
+          <h2>The Essence of a URL</h2>
+
+
+          <p><strong>A URL is a string of printable ASCII characters that is divided into five parts.</strong>
+          </p>
+
+
+          <p><strong>The first is the name of the protocol, the "language" used to communicate on the network. The most widely used protocol is the HTTP protocol (HyperText Transfer Protocol), that makes it possible to exchange web pages in HTML format. A variety of other protocols may also be used, including FTP, News, and Mailto.</strong>
+          </p>
+
+
+          <p><strong>The second is the ID and password, that makes it possible to specify the parameters required to access a secure server. This option is not recommended since the password circulates unscrambled in the URL.</strong>
+          </p>
+
+
+          <p><strong>The third is the name of the server, that is the domain name of the computer hosting the requested resource. Note that it is possible to use the server's IP address.</strong>
+          </p>
+
+
+          <p><strong>The fourth is the port number, that is a number associated with a service that tells the server what type of resource is being requested. The port that is associated with the protocol by default is port number 80. When the server's web service is associated with port number 80, specification of the port number is optional.</strong>
+          </p>
+
+
+          <p><strong>The fifth is the access path to the resource, that tells the server where the resource is located; generally, this includes the location (directory) and the requested file name.</strong>
+          </p>
+          <img alt="url manipulation" class="img-fluid" src="assets/img/url.png">
+
+          <p>The URL can make it possible to send parameters to the server by following the file name with a question mark and then data in ASCII format. A URL is, then, a string of characters with the following format:</p>
+          <img alt="url manipulation" class="img-fluid" src="assets/img/url1.png">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+    <!-- ======= Tabs Section ======= -->
+
+
+    <section class="tabs" id="tabs">
+      <div class="container" data-aos="fade-up">
+        <ul class="nav nav-tabs row d-flex">
+          <li class="nav-item col-3">
+            <a class="nav-link active show" data-bs-target="#tab-1" data-bs-toggle="tab"><i class="ri-gps-line"></i>
+
+            <h4 class="d-none d-lg-block">URL Manipulation</h4></a>
+          </li>
+
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-target="#tab-2" data-bs-toggle="tab"><i class="ri-gps-line"></i>
+
+            <h4 class="d-none d-lg-block">Trial and Error</h4></a>
+          </li>
+
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-target="#tab-3" data-bs-toggle="tab"><i class="ri-gps-line"></i>
+
+            <h4 class="d-none d-lg-block">Directory Traversal</h4></a>
+          </li>
+        </ul>
+
+
+        <div class="tab-content">
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+              <h3>URL Manipulation</h3>
+              <img alt="url manipulation" class="img-fluid" src="assets/img/url2.png">
+              </div>
+
+
+              <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200"><img alt="url manipulation" class="img-fluid" src="assets/img/url8.jpg">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+              <h3>Trial and Error</h3>
+              <img alt="url manipulation" class="img-fluid" src="assets/img/url3.png">
+              </div>
+
+
+              <div class="col-lg-6 order-1 order-lg-2 text-center"><img alt="url manipulation" class="img-fluid" src="assets/img/url9.jpg">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="tab-pane" id="tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+              <h3>Directory Traversal</h3>
+
+
+              <p>Directory traversal or path traversal attacks involve modifying the tree structure path in the URL in order to force the server to access unauthorized parts of the site.</p>
+
+
+              <p>In a classic example, the user may be forced to gradually move back through the tree structure, particularly in the event that the resource is not accessible, for example:</p>
+              <img alt="url manipulation" class="img-fluid" src="assets/img/url4.png">
+              </div>
+
+
+              <div class="col-lg-6 order-1 order-lg-2 text-center"><img alt="" class="img-fluid" src="assets/img/url6.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Tabs Section -->
+
+
+    <footer>
+      <p>Copyright &copy; 2022 CG DEFENSE - All rights reserved</p>
+    </footer>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js">
+    </script> 
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js">
+    </script> <!-- Template Main JS File -->
+     
+    <script src="assets/js/main.js">
+    </script> 
+    <script src="assets/js/block.js">
+    </script> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.9/dist/sweetalert2.all.min.js" integrity="sha256-2iFgzMziCroYT0IkthOS8usgi+KXxOiA5tvNCMyh984=" crossorigin="anonymous"></script>
+    <noscript>
+    <meta content="0; url=noscript.html" http-equiv="REFRESH"></noscript> 
+  </main>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>MITM Attack</title>
+  <link href="assets/img/favicon.png" rel="icon"><!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"><!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"><!-- Template Main CSS File -->
+  <link href="assets/css/mitm.css" rel="stylesheet">
+  <meta name="keywords" content="Computer Science,Education,Ethical Hacking,Cyber Security,Hacking,CSS,Java, HTML,JavaScript,Bootstrap, Tutorials, Articles, Programming, learning, examples, code,tech,new technology,science technology,cgdefense,mitm, man in the middle attack, mitm progression, mitm prevention, interception" />
+  <meta name="description" content="A man in the middle (MITM) attack is a general term for when a perpetrator positions himself in a conversation between a user and an application-either to eavesdrop or to impersonate one of the parties, making it appear as if a normal exchange of information is underway">
+</head>
+
+<body>
+  <!-- ======= Hero Section ======= -->
+
+
+  <section class="d-flex align-items-center" id="hero">
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <div class="row">
+        <h1>MITM Attack</h1>
+
+
+        <h2>A man in the middle (MITM) attack is a general term for when a perpetrator positions himself in a conversation between a user and an application-either to eavesdrop or to impersonate one of the parties, making it appear as if a normal exchange of information is underway.</h2>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero -->
+
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+
+
+    <section class="about section-bg" id="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row no-gutters">
+          <div class="content">
+          <p>The goal of an attack is to steal personal information, such as login credentials, account details and credit card numbers. Targets are typically the users of financial applications, SaaS businesses, e-commerce sites and other websites where logging in is required.</p>
+
+
+          <p>Information obtained during an attack could be used for many purposes, including identity theft, unapproved fund transfers or an illicit password change.</p>
+
+
+          <p>Additionally, it can be used to gain a foothold inside a secured perimeter during the infiltration stage of an advanced persistent threat (APT) assault.</p>
+
+
+          <p>Broadly speaking, a MITM attack is the equivalent of a mailman opening your bank statement, writing down your account details and then resealing the envelope and delivering it to your door.</p>
+          <img alt="MITM" class="img-fluid" src="assets/img/mitm.jpg">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+    <!-- ======= Tabs Section ======= -->
+
+
+    <section class="tabs" id="tabs">
+      <div class="container" data-aos="fade-up">
+        <ul class="nav nav-tabs row d-flex">
+          <li class="nav-item col-3">
+            <a class="nav-link active show" data-bs-target="#tab-1" data-bs-toggle="tab"><i class="ri-error-warning-line"></i>
+
+            <h4 class="d-none d-lg-block">MITM attack progression</h4></a>
+          </li>
+
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-target="#tab-2" data-bs-toggle="tab"><i class="ri-error-warning-line"></i>
+
+            <h4 class="d-none d-lg-block">Man in the middle attack prevention</h4></a>
+          </li>
+
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-target="#tab-3" data-bs-toggle="tab"><i class="ri-error-warning-line"></i>
+
+            <h4 class="d-none d-lg-block">Using Imperva to protect against MITM</h4></a>
+          </li>
+        </ul>
+
+
+        <div class="tab-content">
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+                <h3>MITM attack progression</h3>
+
+
+                <p class="fst-italic"><strong>Successful MITM execution has two distinct phases:</strong>
+                </p>
+
+
+                <ul style="margin-left: +2em;">
+                  <li><i class="ri-check-double-line"></i> <strong>Interception</strong></li>
+
+
+                  <li style="list-style: none; display: inline">
+                    <ul style="margin-left: +3em;">
+                      <li><i class="ri-check-double-line"></i>The first step intercepts user traffic through the attacker's network before it reaches its intended destination.</li>
+
+
+                      <li><i class="ri-check-double-line"></i>The most common (and simplest) way of doing this is a passive attack in which an attacker makes free, malicious WiFi hotspots available to the public. Typically named in a way that corresponds to their location, they aren't password protected. Once a victim connects to such a hotspot, the attacker gains full visibility to any online data exchange.</li>
+
+
+                      <li><i class="ri-check-double-line"></i>Attackers wishing to take a more active approach to interception may launch one of the following attacks:</li>
+
+
+                      <li style="list-style: none; display: inline">
+                        <ul style="margin-left: +4em;">
+                          <li><i class="ri-check-double-line"></i><strong>IP</strong> spoofing involves an attacker disguising himself as an application by altering packet headers in an IP address. As a result, users attempting to access a URL connected to the application are sent to the attacker's website.</li>
+
+
+                          <li><i class="ri-check-double-line"></i><strong>ARP spoofing</strong> is the process of linking an attacker's MAC address with the IP address of a legitimate user on a local area network using fake ARP messages. As a result, data sent by the user to the host IP address is instead transmitted to the attacker.</li>
+
+
+                          <li><i class="ri-check-double-line"></i><strong>DNS spoofing</strong> also known as DNS cache poisoning, involves infiltrating a DNS server and altering a website's address record. As a result, users attempting to access the site are sent by the altered DNS record to the attacker's site.</li>
+                        </ul>
+                      </li>
+                    </ul>
+
+
+                    <ul>
+                      <li><i class="ri-check-double-line"></i><strong>Decryption</strong>
+                      </li>
+
+
+                      <li style="list-style: none; display: inline">
+                        <p style="margin-left: +2em">After interception, any two-way SSL traffic needs to be decrypted without alerting the user or application. A number of methods exist to achieve this:</p>
+
+
+                        <ul style="margin-left: +4em;">
+                          <li><i class="ri-check-double-line"></i>HTTPS spoofing sends a phony certificate to the victim's browser once the initial connection request to a secure site is made. It holds a digital thumbprint associated with the compromised application, which the browser verifies according to an existing list of trusted sites. The attacker is then able to access any data entered by the victim before it's passed to the application.</li>
+
+
+                          <li><i class="ri-check-double-line"></i><strong>SSL BEAST</strong> (browser exploit against SSL/TLS) targets a TLS version 1.0 vulnerability in SSL. Here, the victim's computer is infected with malicious JavaScript that intercepts encrypted cookies sent by a web application. Then the app's cipher block chaining (CBC) is compromised so as to decrypt its cookies and authentication tokens.</li>
+
+
+                          <li><i class="ri-check-double-line"></i><strong>SSL hijacking</strong> occurs when an attacker passes forged authentication keys to both the user and application during a TCP handshake. This sets up what appears to be a secure connection when, in fact, the man in the middle controls the entire session.</li>
+
+
+                          <li><i class="ri-check-double-line"></i><strong>SSL stripping</strong> downgrades a HTTPS connection to HTTP by intercepting the TLS authentication sent from the application to the user. The attacker sends an unencrypted version of the application's site to the user while maintaining the secured session with the application. Meanwhile, the user's entire session is visible to the attacker.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200"><img alt="MITM" class="img-fluid" src="assets/img/mitm2.png">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Man in the middle attack prevention</h3>
+
+
+                <p class="fst-italic">Blocking MITM attacks requires several practical steps on the part of users, as well as a combination of encryption and verification methods for applications.</p>
+
+
+                <p class="fst-italic"><strong>For users, this means:</strong>
+                </p>
+
+
+                <ul style="margin-left: +2em;">
+                  <li><i class="ri-check-double-line"></i><strong>Avoiding WiFi connections that aren't password protected.</strong>
+                  </li>
+
+
+                  <li><i class="ri-check-double-line"></i><strong>Paying attention to browser notifications reporting a website as being unsecured.</strong>
+                  </li>
+
+
+                  <li><i class="ri-check-double-line"></i><strong>Immediately logging out of a secure application when it's not in use.</strong>
+                  </li>
+
+
+                  <li><i class="ri-check-double-line"></i><strong>Not using public networks (e.g., coffee shops, hotels) when conducting sensitive transactions.</strong>
+                  </li>
+                </ul>
+
+
+                <p>For website operators, secure communication protocols, including TLS and HTTPS, help mitigate spoofing attacks by robustly encrypting and authenticating transmitted data. Doing so prevents the interception of site traffic and blocks the decryption of sensitive data, such as authentication tokens.</p>
+
+
+                <p>It is considered best practice for applications to use SSL/TLS to secure every page of their site and not just the pages that require users to log in. Doing so helps decreases the chance of an attacker stealing session cookies from a user browsing on an unsecured section of a website while logged in.'</p>
+              </div>
+
+
+              <div class="col-lg-6 order-1 order-lg-2 text-center"><img alt="MITM" class="img-fluid" src="assets/img/mitm3.png">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="tab-pane" id="tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>protect against MITM</h3>
+
+
+                <p class="fst-italic">MITM attacks often occur due to suboptimal SSL/TLS implementations, like the ones that enable the SSL BEAST exploit or supporting the use of outdated and under-secured ciphers.</p>
+
+
+                <p class="fst-italic">To counter these, Imperva provides its customer with an optimized end-to-end SSL/TLS encryption, as part of its suite of security services.</p>
+
+
+                <p class="fst-italic">Hosted on Imperva content delivery network (CDN), the certificates are optimally implemented to prevent SSL/TLS compromising attacks, such as downgrade attacks (e.g. SSL stripping), and to ensure compliancy with latest PCI DSS demands.</p>
+
+
+                <p class="fst-italic">Offered as a managed service, SSL/TLS configuration is kept up to date maintained by a professional security, both to keep up with compliency demands and to counter emerging threats</p>
+              </div>
+
+
+              <div class="col-lg-6 order-1 order-lg-2 text-center"><img alt="MITM" class="img-fluid" src="assets/img/mitm4.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Tabs Section -->
+
+
+    <footer>
+      <p>Copyright &copy; 2022 CG DEFENSE - All rights reserved</p>
+    </footer>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js">
+    </script> 
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js">
+    </script> <!-- Template Main JS File -->
+     
+    <script src="assets/js/main.js">
+    </script> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.9/dist/sweetalert2.all.min.js" integrity="sha256-2iFgzMziCroYT0IkthOS8usgi+KXxOiA5tvNCMyh984=" crossorigin="anonymous"></script>
+    <script src="assets/js/block.js">
+    </script> <noscript>
+    <meta content="0; url=noscript.html" http-equiv="REFRESH"></noscript>
+  </main>
+</body>
+</html>

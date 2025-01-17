@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>MAINTAINING ACCESS</title>
+  
+  <meta name="keywords" content="Computer Science,Education,Ethical Hacking,Cyber Security,Hacking,CSS,Java, HTML,JavaScript,Bootstrap, Tutorials, Articles, Programming, learning, examples, code,tech,new technology,science technology,cgdefense,Methods to Maintain access, Maintain access" />
+
+  <meta name="description" content="It is the process where the hacker has already gained access into a system. After gaining access, the hacker installs some backdoors in order to enter into the system when he needs access in this owned system in future. ">
+
+  <link href="assets/img/favicon.png" rel="icon"><!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"><!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"><!-- Template Main CSS File -->
+  <link href="assets/css/maintainaccess.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- ======= Hero Section ======= -->
+
+
+  <section class="d-flex align-items-center" id="hero">
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <div class="row">
+        <div class="col-xl-6">
+          <h1>MAINTAINING ACCESS</h1>
+
+
+          <h2>It is the process where the hacker has already gained access into a system. After gaining access, the hacker installs some backdoors in order to enter into the system when he needs access in this owned system in future. Metasploit is the preferred tool in this process.</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero -->
+
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+
+
+    <section class="about section-bg" id="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row no-gutters">
+          <div class="content">
+            <p><strong>Hacker may just hack the system to show it was vulnerable or he can be so mischievous that he wants to maintain or persist the connection in the background without the knowledge of the user. This can be done using Trojans, Rootkits or other malicious files. The aim is to maintain the access to the target until he finishes the tasks he planned to accomplish in that target.</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+    <!-- ======= Tabs Section ======= -->
+
+
+    <section class="tabs" id="tabs">
+      <div class="container" data-aos="fade-up">
+        <ul class="nav nav-tabs row d-flex">
+          <li class="nav-item col-3">
+            <a class="nav-link active show" data-bs-target="#tab-1" data-bs-toggle="tab"><i class="ri-gps-line"></i>
+
+            <h4 class="d-none d-lg-block">Methods to Maintain access</h4></a>
+          </li>
+        </ul>
+
+
+        <div class="tab-content">
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row">
+            <h3>Methods to Maintain access</h3>
+
+
+            <p class="fst-italic">We are going to run a module using the command <strong>use exploit/windows/local/persistence.</strong> It is like a multi-handler module that comes with Metasploit. After this command, we will run the <strong>show options command</strong> to see what we need to configure, as shown in the following screenshot:</p>
+            <img alt="maintainaccess" class="img-fluid" src="assets/img/mantain1.jpg">
+
+            <p class="fst-italic"><br>
+            The first thing that we are going to look at <strong>DELAY</strong>, it is the number of seconds during which the target will try to connect back to us. It is set as <strong>10</strong>, that means every 10 seconds, the target computer will try to connect back to us. Now, we are going to set <strong>EXE_NAME</strong>. It is the name that will show up under the processes where the connection is responding back from. We will set <strong>EXE_NAME</strong> to <strong>browse.exe</strong> to make it less detectable. The command is as follows:</p>
+            <img alt="maintainaccess" class="img-fluid" src="assets/img/mantain2.jpg">
+
+            <p class="fst-italic">The <strong>PATH</strong> where the backdoor or payload will be installed, and it will stay the same. The <strong>REG_NAME</strong> is the register entry, and it will also stay the same. The <strong>SESSION</strong> specifies the session, if we run the session <strong>-l command</strong>, it will list of the available sessions, as shown in the following screenshot:</p>
+            <img alt="maintainaccess" class="img-fluid" src="assets/img/mantain3.jpg">
+
+            <p class="fst-italic">Now we are going to set the <strong>SESSION</strong> as <strong>2</strong> using the following command:</p>
+            <img alt="maintainaccess" class="img-fluid" src="assets/img/mantain4.jpg">
+
+            <p class="fst-italic">The <strong>STARTUP</strong> will be left as <strong>USER</strong>, for the user privileges. Now, we are going to run <strong>show options</strong>. In the following screenshot, we can see that <strong>browser.exe</strong> and session number 2 are set properly:</p>
+            <img alt="maintainaccess" class="img-fluid" src="assets/img/mantain5.jpg">
+
+            <p class="fst-italic">Now, we are going to specify the payload that will be injected as a service. To do this we will run the <strong>show advanced command</strong>, and it will show us the advanced options that we can set up for this particular module. In the following screenshot, we are interested in <strong>EXE::Custom</strong>, which indicates that we are going to use a <strong>custom .exe</strong> to run and inject into the target computer as a service:</p>
+            <img alt="maintainaccess" class="img-fluid" src="assets/img/mantain6.jpg">
+
+            <p class="fst-italic">We are going to set <strong>EXE::Custom to /var/www/html/backdoor.exe</strong>, so that we can run our backdoor that stored in <strong>/var/www/html/backdoor.exe</strong>. The command is as follows:</p>
+            <img alt="maintainaccess" class="img-fluid" src="assets/img/mantain7.jpg">
+
+            <p class="fst-italic">Now, we will run <strong>show advanced command</strong>, and see that it was set up properly, as shown in the following screenshot:</p>
+            <img alt="" class="img-fluid" src="assets/img/mantain8.jpg">
+
+            <p class="fst-italic">Now, we are going to run <strong>exploit command</strong>. It will upload <strong>/var/www/html/backdoor.exe</strong> onto the target computer, using the <strong>session</strong> that we specified, which is <strong>2</strong>. In the following screenshot, we can see that it has been uploaded and installed:</p>
+            <img alt="maintainaccess" class="img-fluid" src="assets/img/mantain9.jpg">
+
+            <p class="fst-italic">If we don't want the backdoor on the target computer anymore, we can use the resource file to delete it. We can store the <strong>RC</strong> file as shown in the preceding screenshot into the Leafpad so that we can run it in the future and delete our backdoor.</p>
+
+
+            <p class="fst-italic">If we run <strong>session -l</strong> command, it will show the available sessions, and we can interact with it. Using the <strong>session -k</strong> command, we can kill that session.</p>
+
+
+            <p class="fst-italic">Now, if we run <strong>list</strong> command, we will see that we have no connection with the target computer. Using our exploit multi-handler, we can listen for an incoming connection.</p>
+
+
+            <p class="fst-italic">If we run <strong>exploit</strong>, and the hacked computer is already booted, we will get a connection straightway, because our target has been injected into the target computer on <strong>port 8080</strong> on <strong>reverse_http</strong>. Now to make sure, we will start our Window machine. To make sure that we will always have a connection to it, we are going to restart the target Windows computer. At every 10 seconds, our Kali machine will try to connect back to it, no matter how many times the Windows machine is shut down or restarted. We will now run our Meterpreter handler and wait for a connection. And then run the <strong>exploit command</strong> to listen, it will take a maximum of 10 seconds to get a connection back. In the following screenshot, we can see that we received a connection to the target computer, and now we have full access to that computer:</p>
+            <img alt="maintainaccess" class="img-fluid" src="assets/img/mantain10.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Tabs Section -->
+
+
+    <footer>
+      <p>Copyright &copy; 2022 CG DEFENSE - All rights reserved</p>
+    </footer>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js">
+    </script> 
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js">
+    </script> <!-- Template Main JS File -->
+     
+    <script src="assets/js/main.js">
+    </script> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.9/dist/sweetalert2.all.min.js" integrity="sha256-2iFgzMziCroYT0IkthOS8usgi+KXxOiA5tvNCMyh984=" crossorigin="anonymous"></script>
+    <script src="assets/js/block.js">
+    </script> <noscript>
+    <meta content="0; url=noscript.html" http-equiv="REFRESH"></noscript> 
+  </main>
+</body>
+</html>

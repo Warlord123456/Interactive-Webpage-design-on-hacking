@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #313131;
+}
+.container
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1200px;
+}
+.container .card
+{
+  position: relative;
+  width: 350px;
+  padding: 40px;
+  margin: 20px;
+  background: #3f3f3f;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1;
+}
+.container .card::after
+{
+  content: '';
+  position: absolute;
+  top: -72px;
+  left: -42px;
+  width: 200px;
+  height: 200px;
+  background-color: #f5d020;
+  background-image: linear-gradient(315deg, #f5d020 0%, #f53503 75%);
+  transition: cubic-bezier(0.39, 0.58, 0.57, 1) all 0.15s;
+  z-index: -2;
+  border-radius: 50%;
+}
+.container .card::before
+{
+  content: '';
+  position: absolute;
+  top: -200px;
+  left: -200px;
+  width: 200px;
+  height: 200px;
+  background-color: #3f3f3f;
+  transition: cubic-bezier(0.39, 0.58, 0.57, 1) all 0.55s;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.container .card:hover::after,
+.container .card.active::after
+{
+  width: 120%;
+  height: 120%;
+  border-radius: 0;
+  top: -10%;
+  left: -10%;
+  transition: cubic-bezier(0.39, 0.58, 0.57, 1) all 0.55s;
+}
+.container .card:hover::before,
+.container .card.active::before
+{
+  top: -72px;
+  left: -42px;
+}
+.container .icon
+{
+  margin-bottom: 10px;
+}
+.container .icon .fa
+{
+  font-size: 3.5em;
+  color: #fff;
+}
+.container .content
+{
+  margin-top: 40px;
+  height: 225px;
+  overflow: hidden;
+}
+.card.active .content
+{
+  height: auto;
+  overflow: auto;
+}
+.container .content h3
+{
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.container .content p
+{
+  font-size: 16px;
+  color: #fff;
+  font-weight: 300;
+}
+.card .more
+{
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  color: #383838;
+  background: #f59014;
+  border-radius: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 15px;
+  letter-spacing: 2px;
+  transition: cubic-bezier(0.39, 0.58, 0.57, 1) all 0.55s;
+}
+.container .card:hover .more,
+.container .card.active .more
+{
+  background: #3f3f3f;
+  color: #fff;
+}
+.container .card.active .more::before
+{
+  content: 'Read Less';
+}
+.container .card .more::before
+{
+  content: 'Read More';
+}
+footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 20px;
+    bottom: 0;
+   
+    left: 0;
+    right: 0;
+    text-align: center;
+    
+}
+
+footer p {
+    margin: 15px 0;
+}
+
+.footer{
+    height:130px ;
+    padding-top: 4rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer .credit{
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: .1rem;
+    color:#009ddc;
+    padding-top:2.5rem;
+    text-align: center;
+}

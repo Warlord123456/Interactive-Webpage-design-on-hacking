@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Web Crawler Bot</title>
+  <link href="assets/img/favicon.png" rel="icon"><!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"><!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"><!-- Template Main CSS File -->
+  <link href="assets/css/webcrawlerbot.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+  <meta name="keywords" content="Computer Science,Education,Ethical Hacking,Cyber Security,Hacking,CSS,Java, HTML,JavaScript,Bootstrap, Tutorials, Articles, Programming, learning, examples, code,tech,new technology,science technology,cgdefense,web crawler, crawlers, search indexing, web crawling vs web scraping, web crawler affect seo, importance of bot management" />
+  <meta name="description" content="A web crawler, or spider, is a type of bot that is typically operated by search engines like Google and Bing. ">
+</head>
+
+<body>
+  <!-- ======= Hero Section ======= -->
+
+
+  <section class="d-flex align-items-center" id="hero">
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <div class="row">
+        <div class="col-xl-6">
+          <h1>Web Crawler Bot</h1>
+
+
+          <h2>A web crawler, or spider, is a type of bot that is typically operated by search engines like Google and Bing. Their purpose is to index the content of websites all across the Internet so that those websites can appear in search engine results.</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero -->
+
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+
+
+    <section class="about section-bg" id="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row no-gutters">
+          <div class="content col-xl-5 d-flex align-items-stretch">
+            <div class="content">
+              <p><strong>The bots from the major search engines are called:</strong>
+              </p>
+            </div>
+          </div>
+
+
+          <div class="col-xl-7 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-shield"></i>
+
+                  <h4><strong>Google: Googlebot</strong> (actually two crawlers, <strong>Googlebot Desktop</strong> and <strong>Googlebot Mobile</strong>, for desktop and mobile searches)</h4>
+                </div>
+
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bx bx-shield"></i>
+
+                  <h4><strong>Bing: Bingbot</strong>
+                  </h4>
+                </div>
+
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bx bx-shield"></i>
+
+                  <h4><strong>Yandex (Russian search engine): Yandex Bot</strong>
+                  </h4>
+                </div>
+
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bx bx-shield"></i>
+
+                  <h4><strong>Baidu (Chinese search engine): Baidu Spider</strong>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <!-- End .content-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+    <!-- ======= Tabs Section ======= -->
+
+
+    <section class="tabs" id="tabs">
+      <div class="container" data-aos="fade-up">
+        <ul class="nav nav-tabs row d-flex">
+          <li class="nav-item col-3">
+            <a class="nav-link active show" data-bs-target="#tab-1" data-bs-toggle="tab"><i class="ri-error-warning-line"></i>
+
+            <h4 class="d-none d-lg-block">What is a web crawler bot?</h4></a>
+          </li>
+
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-target="#tab-2" data-bs-toggle="tab"><i class="ri-error-warning-line"></i>
+
+            <h4 class="d-none d-lg-block">What is search indexing?</h4></a>
+          </li>
+
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-target="#tab-3" data-bs-toggle="tab"><i class="ri-error-warning-line"></i>
+
+            <h4 class="d-none d-lg-block">How do web crawlers work?</h4></a>
+          </li>
+
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-target="#tab-4" data-bs-toggle="tab"><i class="ri-error-warning-line"></i>
+
+            <h4 class="d-none d-lg-block">Why are web crawlers called 'spiders'?</h4></a>
+          </li>
+
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-target="#tab-5" data-bs-toggle="tab"><i class="ri-error-warning-line"></i>
+
+            <h4 class="d-none d-lg-block">Should web crawler bots always be allowed to access web properties?</h4></a>
+          </li>
+
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-target="#tab-6" data-bs-toggle="tab"><i class="ri-error-warning-line"></i>
+
+            <h4 class="d-none d-lg-block">What is the difference between web crawling and web scraping?</h4></a>
+          </li>
+
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-target="#tab-7" data-bs-toggle="tab"><i class="ri-error-warning-line"></i>
+
+            <h4 class="d-none d-lg-block">How do web crawlers affect SEO?</h4></a>
+          </li>
+
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-target="#tab-8" data-bs-toggle="tab"><i class="ri-error-warning-line"></i>
+
+            <h4 class="d-none d-lg-block">Why is it important for bot management to take web crawling into account?</h4></a>
+          </li>
+        </ul>
+
+
+        <div class="tab-content">
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+                <h3>What Is Web Crawler Bot?</h3>
+
+
+                <p class="fst-italic">A web crawler, spider, or search engine bot downloads and indexes content from all over the Internet. The goal of such a bot is to learn what (almost) every webpage on the web is about, so that the information can be retrieved when it's needed. They're called "web crawlers" because crawling is the technical term for automatically accessing a website and obtaining data via a software program.</p>
+
+
+                <p class="fst-italic">These bots are almost always operated by search engines. By applying a search algorithm to the data collected by web crawlers, search engines can provide relevant links in response to user search queries, generating the list of webpages that show up after a user types a search into Google or Bing (or another search engine).</p>
+
+
+                <p class="fst-italic">A web crawler bot is like someone who goes through all the books in a disorganized library and puts together a card catalog so that anyone who visits the library can quickly and easily find the information they need. To help categorize and sort the library's books by topic, the organizer will read the title, summary, and some of the internal text of each book to figure out what it's about.</p>
+
+
+                <p class="fst-italic">However, unlike a library, the Internet is not composed of physical piles of books, and that makes it hard to tell if all the necessary information has been indexed properly, or if vast quantities of it are being overlooked. To try to find all the relevant information the Internet has to offer, a web crawler bot will start with a certain set of known webpages and then follow hyperlinks from those pages to other pages, follow hyperlinks from those other pages to additional pages, and so on.</p>
+
+
+                <p class="fst-italic">It is unknown how much of the publicly available Internet is actually crawled by search engine bots. Some sources estimate that only 40-70% of the Internet is indexed for search - and that's billions of webpages.</p>
+              </div>
+
+
+              <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200"><img alt="web crawler" class="img-fluid" src="assets/img/webcrawler1.jpg">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>What is search indexing?</h3>
+
+
+                <p class="fst-italic">Search indexing is like creating a library card catalog for the Internet so that a search engine knows where on the Internet to retrieve information when a person searches for it. It can also be compared to the index in the back of a book, which lists all the places in the book where a certain topic or phrase is mentioned.</p>
+
+
+                <p class="fst-italic">Indexing focuses mostly on the text that appears on the page, and on the metadata* about the page that users don't see. When most search engines index a page, they add all the words on the page to the index - except for words like "a," "an," and "the" in Google's case. When users search for those words, the search engine goes through its index of all the pages where those words appear and selects the most relevant ones.</p>
+
+
+                <p class="fst-italic">*In the context of search indexing, metadata is data that tells search engines what a webpage is about. Often the meta title and meta description are what will appear on search engine results pages, as opposed to content from the webpage that's visible to users.</p>
+              </div>
+
+
+              <div class="col-lg-6 order-1 order-lg-2 text-center"><img alt="webattack" class="img-fluid" src="assets/img/webcrawler2.jpg">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="tab-pane" id="tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>How do web crawlers work?</h3>
+
+
+                <p class="fst-italic">The Internet is constantly changing and expanding. Because it is not possible to know how many total webpages there are on the Internet, web crawler bots start from a seed, or a list of known URLs. They crawl the webpages at those URLs first. As they crawl those webpages, they will find hyperlinks to other URLs, and they add those to the list of pages to crawl next.</p>
+
+
+                <p class="fst-italic">Given the vast number of webpages on the Internet that could be indexed for search, this process could go on almost indefinitely. However, a web crawler will follow certain policies that make it more selective about which pages to crawl, in what order to crawl them, and how often they should crawl them again to check for content updates.</p>
+
+
+                <p class="fst-italic"><strong>The relative importance of each webpage:</strong> Most web crawlers don't crawl the entire publicly available Internet and aren't intended to; instead they decide which pages to crawl first based on the number of other pages that link to that page, the amount of visitors that page gets, and other factors that signify the page's likelihood of containing important information.</p>
+
+
+                <p class="fst-italic">The idea is that a webpage that is cited by a lot of other webpages and gets a lot of visitors is likely to contain high-quality, authoritative information, so it's especially important that a search engine has it indexed - just as a library might make sure to keep plenty of copies of a book that gets checked out by lots of people.</p>
+
+
+                <p class="fst-italic"><strong>Revisiting webpages:</strong> Content on the Web is continually being updated, removed, or moved to new locations. Web crawlers will periodically need to revisit pages to make sure the latest version of the content is indexed.</p>
+
+
+                <p class="fst-italic"><strong>Robots.txt requirements:</strong> Web crawlers also decide which pages to crawl based on the robots.txt protocol (also known as the robots exclusion protocol). Before crawling a webpage, they will check the robots.txt file hosted by that page's web server. A robots.txt file is a text file that specifies the rules for any bots accessing the hosted website or application. These rules define which pages the bots can crawl, and which links they can follow.</p>
+
+
+                <p class="fst-italic">All these factors are weighted differently within the proprietary algorithms that each search engine builds into their spider bots. Web crawlers from different search engines will behave slightly differently, although the end goal is the same: to download and index content from webpages.</p>
+              </div>
+
+
+              <div class="col-lg-6 order-1 order-lg-2 text-center"><img alt="webattack" class="img-fluid" src="assets/img/webcrawler3.jpg">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="tab-pane" id="tab-4">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Why are web crawlers called 'spiders'?</h3>
+
+
+                <p class="fst-italic">The Internet, or at least the part that most users access, is also known as the World Wide Web - in fact that's where the "www" part of most website URLs comes from. It was only natural to call search engine bots "spiders," because they crawl all over the Web, just as real spiders crawl on spiderwebs.</p>
+              </div>
+
+
+              <div class="col-lg-6 order-1 order-lg-2 text-center"><img alt="webattack" class="img-fluid" src="assets/img/webcrawler4.jpg">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="tab-pane" id="tab-5">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Should web crawler bots always be allowed to access web properties?</h3>
+
+
+                <p class="fst-italic">That's up to the web property, and it depends on a number of factors. Web crawlers require server resources in order to index content - they make requests that the server needs to respond to, just like a user visiting a website or other bots accessing a website. Depending on the amount of content on each page or the number of pages on the site, it could be in the website operator's best interests not to allow search indexing too often, since too much indexing could overtax the server, drive up bandwidth costs, or both.</p>
+
+
+                <p class="fst-italic">Also, developers or companies may not want some webpages to be discoverable unless a user already has been given a link to the page (without putting the page behind a paywall or a login). One example of such a case for enterprises is when they create a dedicated landing page for a marketing campaign, but they don't want anyone not targeted by the campaign to access the page. In this way they can tailor the messaging or precisely measure the page's performance. In such cases the enterprise can add a "no index" tag to the landing page, and it won't show up in search engine results. They can also add a "disallow" tag in the page or in the robots.txt file, and search engine spiders won't crawl it at all.</p>
+
+
+                <p class="fst-italic">Website owners may not want web crawler bots to crawl part or all of their sites for a variety of other reasons as well. For instance, a website that offers users the ability to search within the site may want to block the search results pages, as these are not useful for most users. Other auto-generated pages that are only helpful for one user or a few specific users should also be blocked.</p>
+              </div>
+
+
+              <div class="col-lg-6 order-1 order-lg-2 text-center"><img alt="webattack" class="img-fluid" src="assets/img/webcrawler5.jpg">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="tab-pane" id="tab-6">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Should web crawler bots always be allowed to access web properties?</h3>
+
+
+                <p class="fst-italic">Web scraping, data scraping, or content scraping is when a bot downloads the content on a website without permission, often with the intention of using that content for a malicious purpose.</p>
+
+
+                <p class="fst-italic">Web scraping is usually much more targeted than web crawling. Web scrapers may be after specific pages or specific websites only, while web crawlers will keep following links and crawling pages continuously.</p>
+
+
+                <p class="fst-italic">Also, web scraper bots may disregard the strain they put on web servers, while web crawlers, especially those from major search engines, will obey the robots.txt file and limit their requests so as not to overtax the web server.</p>
+              </div>
+
+
+              <div class="col-lg-6 order-1 order-lg-2 text-center"><img alt="webattack" class="img-fluid" src="assets/img/webcrawler6.jpg">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="tab-pane" id="tab-7">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>How do web crawlers affect SEO?</h3>
+
+
+                <p class="fst-italic">SEO stands for search engine optimization, and it is the discipline of readying content for search indexing so that a website shows up higher in search engine results.</p>
+
+
+                <p class="fst-italic">If spider bots don't crawl a website, then it can't be indexed, and it won't show up in search results. For this reason, if a website owner wants to get organic traffic from search results, it is very important that they don't block web crawler bots.</p>
+              </div>
+
+
+              <div class="col-lg-6 order-1 order-lg-2 text-center"><img alt="webattack" class="img-fluid" src="assets/img/webcrawler7.jpg">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="tab-pane" id="tab-8">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Why is it important for bot management to take web crawling into account?</h3>
+
+
+                <p class="fst-italic">Bad bots can cause a lot of damage, from poor user experiences to server crashes to data theft. However, in blocking bad bots, it's important to still allow good bots, such as web crawlers, to access web properties</p>
+              </div>
+
+
+              <div class="col-lg-6 order-1 order-lg-2 text-center"><img alt="webattack" class="img-fluid" src="assets/img/webcrawler8.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Tabs Section -->
+
+
+    <footer>
+      <p>Copyright &copy; 2022 CG DEFENSE - All rights reserved</p>
+    </footer>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js">
+    </script> 
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js">
+    </script> <!-- Template Main JS File -->
+     
+    <script src="assets/js/main.js">
+    </script> 
+    <script src="assets/js/block.js">
+    </script> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.9/dist/sweetalert2.all.min.js" integrity="sha256-2iFgzMziCroYT0IkthOS8usgi+KXxOiA5tvNCMyh984=" crossorigin="anonymous"></script>
+    <noscript>
+    <meta content="0; url=noscript.html" http-equiv="REFRESH"></noscript> 
+  </main>
+</body>
+</html>

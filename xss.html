@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Cross-site Scripting (XSS)</title>
+  <link href="assets/img/favicon.png" rel="icon"><!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"><!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"><!-- Template Main CSS File -->
+  <link href="assets/css/xss.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+  <meta name="keywords" content="Computer Science,Education,Ethical Hacking,Cyber Security,Hacking,CSS,Java, HTML,JavaScript,Bootstrap, Tutorials, Articles, Programming, learning, examples, code,tech,new technology,science technology,cgdefense,xss attack , xss vulnerability, xss, How Cross-site Scripting Works,What Can the Attacker Do with JavaScript?, How to Prevent XSS" />
+  <meta name="description" content="What Is XSS ? How XSS works ? XSS Attack Vectors">
+</head>
+
+<body>
+  <!-- ======= Hero Section ======= -->
+
+
+  <section class="d-flex align-items-center" id="hero">
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <div class="row">
+        <div class="col-xl-6">
+          <h1>Cross-site Scripting (XSS)</h1>
+
+
+          <h2>Cross-site Scripting (XSS) is a client-side code injection attack. The attacker aims to execute malicious scripts in a web browser of the victim by including malicious code in a legitimate web page or web application. The actual attack occurs when the victim visits the web page or web application that executes the malicious code. The web page or web application becomes a vehicle to deliver the malicious script to the user's browser. Vulnerable vehicles that are commonly used for Cross-site Scripting attacks are forums, message boards, and web pages that allow comments.</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero -->
+
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+
+
+    <section class="about section-bg" id="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row no-gutters">
+          <div class="content">
+            <p><strong>A web page or web application is vulnerable to XSS if it uses unsanitized user input in the output that it generates. This user input must then be parsed by the victim's browser. XSS attacks are possible in VBScript, ActiveX, Flash, and even CSS. However, they are most common in JavaScript, primarily because JavaScript is fundamental to most browsing experiences.</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+    <!-- ======= Tabs Section ======= -->
+
+
+    <section class="tabs" id="tabs">
+      <div class="container" data-aos="fade-up">
+        <ul class="nav nav-tabs row d-flex">
+          <li class="nav-item col-3">
+            <a class="nav-link active show" data-bs-target="#tab-1" data-bs-toggle="tab"><i class="ri-gps-line"></i>
+
+            <h4 class="d-none d-lg-block">"Isn't Cross-site Scripting the User's Problem?"</h4></a>
+          </li>
+
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-target="#tab-2" data-bs-toggle="tab"><i class="ri-gps-line"></i>
+
+            <h4 class="d-none d-lg-block">What Can the Attacker Do with JavaScript?</h4></a>
+          </li>
+
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-target="#tab-3" data-bs-toggle="tab"><i class="ri-gps-line"></i>
+
+            <h4 class="d-none d-lg-block">How Cross-site Scripting Works</h4></a>
+          </li>
+
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-target="#tab-4" data-bs-toggle="tab"><i class="ri-gps-line"></i>
+
+            <h4 class="d-none d-lg-block">Stealing Cookies Using XSS</h4></a>
+          </li>
+
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-target="#tab-5" data-bs-toggle="tab"><i class="ri-gps-line"></i>
+
+            <h4 class="d-none d-lg-block">Cross-site Scripting Attack Vectors</h4></a>
+          </li>
+
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-target="#tab-6" data-bs-toggle="tab"><i class="ri-gps-line"></i>
+
+            <h4 class="d-none d-lg-block">How to Prevent XSS</h4></a>
+          </li>
+        </ul>
+
+
+        <div class="tab-content">
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row">
+            <h3>"Isn't Cross-site Scripting the User's Problem?"</h3>
+
+
+            <p class="fst-italic">If an attacker can abuse an XSS vulnerability on a web page to execute arbitrary JavaScript in a user's browser, the security of that vulnerable website or vulnerable web application and its users has been compromised. XSS is not the user's problem like any other security vulnerability. If it is affecting your users, it affects you.</p>
+
+
+            <p class="fst-italic">Cross-site Scripting may also be used to deface a website instead of targeting the user. The attacker can use injected scripts to change the content of the website or even redirect the browser to another web page, for example, one that contains malicious code.</p>
+            <img alt="User's Problem XSS" class="img-fluid" src="assets/img/xss.jpg">
+            </div>
+          </div>
+
+
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <h3>What Can the Attacker Do with JavaScript?</h3>
+
+
+              <p class="fst-italic">XSS vulnerabilities are perceived as less dangerous than for example SQL Injection vulnerabilities. Consequences of the ability to execute JavaScript on a web page may not seem dire at first. Most web browsers run JavaScript in a very tightly controlled environment. JavaScript has limited access to the user's operating system and the user's files. However, JavaScript can still be dangerous if misused as part of malicious content:</p>
+
+
+              <ul style="margin-left: +2em;">
+                <li><i class="ri-check-double-line"></i>Malicious JavaScript has access to all the objects that the rest of the web page has access to. This includes access to the user's cookies. Cookies are often used to store session tokens. If an attacker can obtain a user's session cookie, they can impersonate that user, perform actions on behalf of the user, and gain access to the user's sensitive data.</li>
+
+
+                <li><i class="ri-check-double-line"></i>JavaScript can read the browser DOM and make arbitrary modifications to it. Luckily, this is only possible within the page where JavaScript is running.</li>
+
+
+                <li><i class="ri-check-double-line"></i>JavaScript can use the <strong>&gt;XMLHttpRequest</strong> object to send HTTP requests with arbitrary content to arbitrary destinations.</li>
+
+
+                <li><i class="ri-check-double-line"></i>JavaScript in modern browsers can use HTML5 APIs. For example, it can gain access to the user's geolocation, webcam, microphone, and even specific files from the user's file system. Most of these APIs require user opt-in, but the attacker can use social engineering to go around that limitation.</li>
+
+
+                <li style="list-style: none; display: inline">
+                  <p class="fst-italic">The above, in combination with social engineering, allow criminals to pull off advanced attacks including cookie theft, planting trojans, keylogging, phishing, and identity theft. XSS vulnerabilities provide the perfect ground to escalate attacks to more serious ones. Cross-site Scripting can also be used in conjunction with other types of attacks, for example, Cross-Site Request Forgery (CSRF).</p>
+
+
+                  <p class="fst-italic">There are several types of Cross-site Scripting attacks: stored/persistent XSS, reflected/non-persistent XSS, and DOM-based XSS.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="tab-pane" id="tab-3">
+            <div class="row">
+              <h3>How Cross-site Scripting Works</h3>
+
+
+              <p class="fst-italic"><strong>There are two stages to a typical XSS attack:</strong>
+              </p>
+
+
+              <ul style="margin-left: +2em;">
+                <li><i class="ri-check-double-line"></i>To run malicious JavaScript code in a victim's browser, an attacker must first find a way to inject malicious code (payload) into a web page that the victim visits.</li>
+
+
+                <li><i class="ri-check-double-line"></i>After that, the victim must visit the web page with the malicious code. If the attack is directed at particular victims, the attacker can use social engineering and/or phishing to send a malicious URL to the victim.</li>
+              </ul>
+
+
+              <p class="fst-italic">For step one to be possible, the vulnerable website needs to directly include user input in its pages. An attacker can then insert a malicious string that will be used within the web page and treated as source code by the victim's browser. There are also variants of XSS attacks where the attacker lures the user to visit a URL using social engineering and the payload is part of the link that the user clicks.</p>
+
+
+              <p class="fst-italic">The following is a snippet of server-side pseudocode that is used to display the most recent comment on a web page:</p>
+              <img alt="Xss Attack" class="img-fluid" src="assets/img/xss1.jpg">
+
+              <p class="fst-italic">The above script simply takes the latest comment from a database and includes it in an HTML page. It assumes that the comment printed out consists of only text and contains no HTML tags or other code. It is vulnerable to XSS, because an attacker could submit a comment that contains a malicious payload, for example:</p>
+              <img alt="" class="img-fluid" src="assets/img/xss2.jpg">
+
+              <p class="fst-italic">The web server provides the following HTML code to users that visit this web page:</p>
+              <img alt="" class="img-fluid" src="assets/img/xss3.jpg">
+
+              <p class="fst-italic">When the page loads in the victim's browser, the attacker's malicious script executes. Most often, the victim does not realize it and is unable to prevent such an attack.</p>
+            </div>
+          </div>
+
+
+          <div class="tab-pane" id="tab-4">
+            <div class="row">
+              <h3>Stealing Cookies Using XSS</h3>
+
+
+              <p class="fst-italic">Criminals often use XSS to steal cookies. This allows them to impersonate the victim. The attacker can send the cookie to their own server in many ways. One of them is to execute the following client-side script in the victim's browser:</p>
+              <img alt="" class="img-fluid" src="assets/img/xss4.jpg">
+
+              <ul style="margin-left: +2em;">
+                <li><i class="ri-check-double-line"></i>The attacker injects a payload into the website's database by submitting a vulnerable form with malicious JavaScript content.</li>
+
+
+                <li><i class="ri-check-double-line"></i>The victim requests the web page from the web server.</li>
+
+
+                <li><i class="ri-check-double-line"></i>The web server serves the victim's browser the page with attacker's payload as part of the HTML body.</li>
+
+
+                <li><i class="ri-check-double-line"></i>The victim's browser executes the malicious script contained in the HTML body. In this case, it sends the victim's cookie to the attacker's server.</li>
+
+
+                <li><i class="ri-check-double-line"></i>The attacker now simply needs to extract the victim's cookie when the HTTP request arrives at the server.</li>
+
+
+                <li><i class="ri-check-double-line"></i>The attacker can now use the victim's stolen cookie for impersonation.</li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="tab-pane" id="tab-5">
+            <div class="row">
+            <h3>Cross-site Scripting Attack Vectors</h3>
+
+
+            <p class="fst-italic">The following is a list of common XSS attack vectors that an attacker could use to compromise the security of a website or web application through an XSS attack. A more extensive list of XSS payload examples is maintained by the OWASP organization: XSS Filter Evasion Cheat Sheet.</p>
+            <img alt="" class="img-fluid" src="assets/img/xss5.jpg"> <img alt="" class="img-fluid" src="assets/img/xss6.jpg"> <img alt="" class="img-fluid" src="assets/img/xss7.jpg"> <img alt="" class="img-fluid" src="assets/img/xss8.jpg"></div>
+          </div>
+
+
+          <div class="tab-pane" id="tab-6">
+            <div class="row">
+              <h3>How to Prevent XSS</h3>
+
+
+              <p class="fst-italic"><strong>Step 1: Train and maintain awareness</strong>
+              </p>
+
+
+              <p class="fst-italic">To keep your web application safe, everyone involved in building the web application must be aware of the risks associated with XSS vulnerabilities. You should provide suitable security training to all your developers, QA staff, DevOps, and SysAdmins. You can start by referring them to this page.</p>
+
+
+              <p class="fst-italic"><strong>Step 2: Don't trust any user input</strong>
+              </p>
+
+
+              <p class="fst-italic">Treat all user input as untrusted. Any user input that is used as part of HTML output introduces a risk of an XSS. Treat input from authenticated and/or internal users the same way that you treat public input.</p>
+
+
+              <p class="fst-italic"><strong>Step 3: Use escaping/encoding</strong>
+              </p>
+
+
+              <p class="fst-italic">Use an appropriate escaping/encoding technique depending on where user input is to be used: HTML escape, JavaScript escape, CSS escape, URL escape, etc. Use existing libraries for escaping, don't write your own unless absolutely necessary.</p>
+
+
+              <p class="fst-italic"><strong>Step 4: Sanitize HTML</strong>
+              </p>
+
+
+              <p class="fst-italic">If the user input needs to contain HTML, you can't escape/encode it because it would break valid tags. In such cases, use a trusted and verified library to parse and clean HTML. Choose the library depending on your development language, for example, HtmlSanitizer for .NET or SanitizeHelper for Ruby on Rails.</p>
+
+
+              <p class="fst-italic"><strong>Step 5: Set the HttpOnly flag</strong>
+              </p>
+
+
+              <p class="fst-italic">To mitigate the consequences of a possible XSS vulnerability, set the HttpOnly flag for cookies. If you do, such cookies will not be accessible via client-side JavaScript.</p>
+
+
+              <p class="fst-italic"><strong>Step 6: Use a Content Security Policy</strong>
+              </p>
+
+
+              <p class="fst-italic">To mitigate the consequences of a possible XSS vulnerability, also use a Content Security Policy (CSP). CSP is an HTTP response header that lets you declare the dynamic resources that are allowed to load depending on the request source.</p>
+
+
+              <p class="fst-italic"><strong>Step 7: Scan regularly (with Acunetix)</strong>
+              </p>
+
+
+              <p class="fst-italic">XSS vulnerabilities may be introduced by your developers or through external libraries/modules/software. You should regularly scan your web applications using a web vulnerability scanner such as Acunetix. If you use Jenkins, you should install the Acunetix plugin to automatically scan every build.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Tabs Section -->
+
+
+    <footer>
+      <p>Copyright &copy; 2022 CG DEFENSE - All rights reserved</p>
+    </footer>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js">
+    </script> 
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js">
+    </script> <!-- Template Main JS File -->
+     
+    <script src="assets/js/main.js">
+    </script> 
+    <script src="assets/js/block.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.9/dist/sweetalert2.all.min.js" integrity="sha256-2iFgzMziCroYT0IkthOS8usgi+KXxOiA5tvNCMyh984=" crossorigin="anonymous"></script>
+     <noscript>
+    <meta content="0; url=noscript.html" http-equiv="REFRESH"></noscript> 
+  </main>
+</body>
+</html>

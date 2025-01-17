@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2186399228087050"
+   crossorigin="anonymous"></script>
+  <title>Birthday Attack</title>
+  <meta name="keywords" content="Computer Science,Education,Ethical Hacking,Cyber Security,Hacking,CSS,Java, HTML,JavaScript,Bootstrap, Tutorials, Articles, Programming, learning, examples, code,tech,new technology,science technology,cgdefense,Birthday Attack,Birthday Attack Paradox,prevent the Birthday attack" />
+  <meta name="description" content="The birthday attack is the cryptographic attack type that cracks the algorithms of mathematics by finding matches in the hash function.">
+
+  <link href="assets/img/favicon.png" rel="icon"><!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"><!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"><!-- Template Main CSS File -->
+  <link href="assets/css/birthdayattack.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+  <meta name="author" content="cgdefense">
+  <meta name="google-site-verification" content="4LGQvY2xYhqIFTf7TXxHxLrwdAybAhlcJYE-enSOdKQ" />
+  <link rel="canonical" href="https://cgdefense.co.in/birthdayattack.html"/>
+  <meta name="robots" content="index,follow">
+  <meta name="revisit-after" content="1 day">
+</head>
+
+<body>
+  <!-- ======= Hero Section ======= -->
+
+
+  <section class="d-flex align-items-center" id="hero">
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <div class="row">
+        <div class="col-xl-6">
+          <h1>Birthday attack</h1>
+
+
+          <h2>The birthday attack is the cryptographic attack type that cracks the algorithms of mathematics by finding matches in the hash function. The method relies upon the birthday paradox through which the chance of sharing one birthday by two people is quite higher than it appears. In the same way, the chance of collision detection is also higher within the target hash function, thereby enables the attacker to find similar fragments by the use of a few iterations. The attack is used mostly for abusing communication among the two parties. The nature of the attack is dependent upon the collisions found among random attacks as well as the degree of the permutation.</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero -->
+
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+
+
+    <section class="about section-bg" id="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row no-gutters">
+          <div class="content">
+            <h3>What is the Birthday Paradox Problem?</h3>
+
+
+            <p><strong>The probability theory describes the birthday paradox problem as if you carry the 'n' number of people in the room, there is the probability that some of them might have their birthdays on a similar day. But, one important point to consider is that we do not focus on the matching birth dates but rather two people sharing one birthday is the major point.</strong>
+            </p>
+
+
+            <p><strong>So, the birthday attacks utilize the approach of probability to minimize the difficulty in the matched collision and to get the approximate hash collision risk in a certain number. It also shows that discovering a particular hash collision is the most problematic thing instead of finding the matched hash collisions with similar values.</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+    <!-- ======= Tabs Section ======= -->
+
+
+    <section class="tabs" id="tabs">
+      <div class="container" data-aos="fade-up">
+        <ul class="nav nav-tabs row d-flex">
+          <li class="nav-item col-3">
+            <a class="nav-link active show" data-bs-target="#tab-1" data-bs-toggle="tab"><i class="ri-gps-line"></i>
+
+            <h4 class="d-none d-lg-block">Calculating birthday paradox</h4></a>
+          </li>
+        </ul>
+
+
+        <div class="tab-content">
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row">
+              <h3>Calculating birthday paradox</h3>
+
+
+              <p class="fst-italic">Most people assume 183 as it is actually half of every possible birthday and it seems intuitive as well. However, it is not the game of intuition so, for the calculation, there are few assumptions to be made.</p>
+
+
+              <p class="fst-italic">First of all, we will not consider the leap year as it will simplify the math and doesn't change results. We will also consider that every birthday has an equal occurrence chance.</p>
+
+
+              <p class="fst-italic">So, start with one person and then keep on adding people one at a time to show how this calculation is working. For the calculations, this is easy to calculate the probability that no other person will share the birthday. This probability will be subtracted from the other one derived that includes at least two people will share one birthday.</p>
+
+
+              <p class="fst-italic"><strong>Chance of one match at least = 1 - probability of no match</strong>
+              </p>
+
+
+              <p class="fst-italic"><strong>For first person, there is 365/365 chance that there is no other shared birthday.</strong>
+              </p>
+              <img alt="Calculating birthday paradox" class="img-fluid" src="assets/img/birthday1.jpg">
+
+              <p class="fst-italic">Now, add the second person. The first person has all chances of one birthday but the second person will have only 364/365 chance of not sharing similar day birthday. This goes:</p>
+              <img alt="Calculating birthday paradox" class="img-fluid" src="assets/img/birthday2.jpg">
+
+              <p class="fst-italic">Similarly, for the third person, the probability will be 363/365 of not sharing similar day birth day.</p>
+              <img alt="Calculating birthday paradox" class="img-fluid" src="assets/img/birthday3.jpg">
+
+              <p class="fst-italic">So, the pattern for the entire population will be:</p>
+              <img alt="Calculating birthday paradox" class="img-fluid" src="assets/img/birthday4.jpg">
+
+              <p class="fst-italic">When the probabilities are known, the answer to the birthday problem becomes 50.7% chance of people sharing people in total of 23 people group.</p>
+
+
+              <p class="fst-italic">If the group size is increased, the probability will be reduced. Varying group size will have different effect on the probability.</p>
+
+
+              <h3>How to prevent the Birthday attack</h3>
+
+
+              <p class="fst-italic">To prevent the birthday attack, there is the possibility that the length output for the hash function of the signature scheme can be selected large enough such that the chance of birthday attack computationally becomes impossible.</p>
+
+
+              <p class="fst-italic">Along with using the extended bit length, the signer can also prevent the attack if make some inoffensive but random changes to the document before it is signed and keep the contract copy under possession. Such that he can demonstrate within the court that the signature matches with the contract.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Tabs Section -->
+
+
+    <footer>
+      <p>Copyright &copy; 2022 CG DEFENSE - All rights reserved</p>
+    </footer>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js">
+    </script> 
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js">
+    </script> <!-- Template Main JS File -->
+     
+    <script src="assets/js/main.js">
+    </script> 
+    <script src="assets/js/block.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.9/dist/sweetalert2.all.min.js" integrity="sha256-2iFgzMziCroYT0IkthOS8usgi+KXxOiA5tvNCMyh984=" crossorigin="anonymous"></script>
+  </main>
+  <noscript>
+  <meta content="0; url=noscript.html" http-equiv="REFRESH"></noscript>
+</body>
+</html>

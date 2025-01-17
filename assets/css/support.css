@@ -1,0 +1,332 @@
+body,div,h1,h2,h3,h4,h5,h6,html,img,p,span{
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    font:inherit;
+    vertical-align:baseline
+}
+ul{
+    list-style:none;
+    margin:0;
+    padding:0
+}
+.clear{
+    clear:both
+}
+img{
+    max-width:100%
+}
+body{
+    font-family:Ubuntu,sans-serif;
+    background: #FFD400;
+    background-attachment:fixed;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    background-size:cover
+}
+h1{
+    font-size:53px;
+    text-align:center;
+    color:#fff;
+    margin:30px 0;
+    letter-spacing:5px;
+    font-style:italic
+}
+h1 span{
+    color:#e91e1e
+}
+.mainw3-agileinfo{
+    width:57%;
+    margin:100px auto;
+    background: #191970;
+    border-radius: 20px;
+}
+.contact-w3lsleft{
+    float:left;
+    width:55%;
+    padding:50px;
+    padding-right:0
+}
+.contact-w3left{
+    float:right;
+    width:39%;
+    text-align:center;
+    margin-top:61px
+}
+.contact-w3lsleft h2{
+    color:#fff;
+    font-size:38px;
+    letter-spacing:2px;
+    font-weight:500;
+    text-shadow:-8px 6px 3px #0c0c0c
+}
+.contact-w3left img{
+    display:inherit
+}
+.contact-w3lsleft p{
+    font-size:16px;
+    color:#fbfbfb;
+    letter-spacing:1px;
+    line-height:1.8;
+    margin:20px 0 25px
+}
+.contact-w3lsleft ul li{
+    list-style:inside;
+    margin-bottom:13px;
+    color:#000;
+    letter-spacing:1px;
+    font-size:16px
+}
+h3{
+    color:#fff;
+    font-size:28px;
+    margin-top:42px;
+    letter-spacing:1px
+}
+h3 span{
+    color:#e91e1e
+}
+::-webkit-input-placeholder{
+    color:#fff
+}
+:-moz-placeholder{
+    color:#fff
+}
+::-moz-placeholder{
+    color:#fff
+}
+:-ms-input-placeholder{
+    color:#fff
+}
+@media (max-width:1440px){
+    .mainw3-agileinfo{
+        width:59%;
+        margin:80px auto
+    }
+    .contact-w3left{
+        margin-top:82px
+    }
+}
+@media (max-width:1366px){
+    .mainw3-agileinfo{
+        width:62%
+    }
+    .contact-w3left{
+        margin-top:83px
+    }
+}
+@media (max-width:1280px){
+    .mainw3-agileinfo{
+        width:66%
+    }
+    .contact-w3left{
+        margin-top:84px
+    }
+}
+@media (max-width:1080px){
+    .mainw3-agileinfo{
+        width:79%
+    }
+}
+@media (max-width:1050px){
+    .mainw3-agileinfo{
+        width:81%;
+        margin:60px auto
+    }
+    h1{
+        margin:20px 0
+    }
+}
+@media (max-width:1024px){
+    .contact-w3lsleft{
+        padding:40px;
+        padding-right:0
+    }
+    .contact-w3lsleft h2{
+        font-size:36px
+    }
+    .contact-w3lsleft p{
+        font-size:15px
+    }
+}
+@media (max-width:900px){
+    .contact-w3lsleft{
+        padding:40px;
+        float:none;
+        width:89%
+    }
+    .contact-w3left{
+        margin-top:0;
+        float:none;
+        width:100%
+    }
+    .mainw3-agileinfo{
+        margin:40px auto
+    }
+}
+@media (max-width:800px){
+    .contact-w3lsleft{
+        padding:30px 40px;
+        width:87.5%
+    }
+    h3{
+        font-size:26px
+    }
+}
+@media (max-width:768px){
+    .contact-w3lsleft{
+        width:87%
+    }
+    h1{
+        font-size:48px;
+        letter-spacing:3px
+    }
+}
+@media (max-width:667px){
+    h1{
+        margin:15px 0;
+        font-size:46px
+    }
+    .contact-w3lsleft h2{
+        font-size:33px
+    }
+    .contact-w3lsleft p{
+        font-size:14px
+    }
+    .contact-w3lsleft ul li{
+        font-size:15px
+    }
+    h3{
+        font-size:25px;
+        margin-top:32px
+    }
+    .contact-w3lsleft{
+        width:85%
+    }
+}
+@media (max-width:640px){
+    .mainw3-agileinfo{
+        width:87%
+    }
+}
+@media (max-width:568px){
+    .mainw3-agileinfo{
+        width:90%;
+        margin:30px auto
+    }
+}
+@media (max-width:480px){
+    h1{
+        margin:13px 0;
+        font-size:39px;
+        letter-spacing:2px
+    }
+    .contact-w3lsleft{
+        width:86%;
+        padding:20px 30px
+    }
+    .contact-w3lsleft h2{
+        font-size:30px
+    }
+    .contact-w3lsleft p{
+        font-size:13px;
+        margin:15px 0 22px
+    }
+    .contact-w3lsleft ul li{
+        font-size:14px
+    }
+    h3{
+        font-size:23px;
+        margin-top:30px;
+        letter-spacing:0
+    }
+}
+@media (max-width:440px){
+    .contact-w3lsleft{
+        width:85%
+    }
+}
+@media (max-width:414px){
+    .mainw3-agileinfo{
+        width:93%
+    }
+    .contact-w3lsleft{
+        width:84%
+    }
+}
+@media (max-width:384px){
+    h1{
+        font-size:37px;
+        letter-spacing:1px
+    }
+    .contact-w3lsleft h2{
+        font-size:27px
+    }
+    .contact-w3lsleft p{
+        font-size:12px
+    }
+    h3{
+        font-size:22px
+    }
+    .contact-w3lsleft{
+        width:82%
+    }
+}
+@media (max-width:375px){
+    .mainw3-agileinfo{
+        margin:20px auto
+    }
+}
+@media (max-width:320px){
+    h1{
+        font-size:31px;
+        letter-spacing:1px
+    }
+    .contact-w3lsleft h2{
+        font-size:22px
+    }
+    .contact-w3lsleft{
+        width:87%;
+        padding:15px 18px
+    }
+    .contact-w3lsleft ul li{
+        font-size:13px;
+        margin-bottom:12px
+    }
+    h3{
+        font-size:18px;
+        margin-top:22px
+    }
+}
+*{
+    box-sizing:border-box;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif
+}
+@font-face{
+    font-family:FontAwesome;
+    src:url(../fonts/fontawesome-webfont.eot?v=4.7.0);
+    src:url(../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format('embedded-opentype'),url(../fonts/fontawesome-webfont.woff2?v=4.7.0) format('woff2'),url(../fonts/fontawesome-webfont.woff?v=4.7.0) format('woff'),url(../fonts/fontawesome-webfont.ttf?v=4.7.0) format('truetype'),url(../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format('svg');
+    font-weight:400;
+    font-style:normal
+}
+@-webkit-keyframes fa-spin{
+    0%{
+        -webkit-transform:rotate(0);
+        transform:rotate(0)
+    }
+    100%{
+        -webkit-transform:rotate(359deg);
+        transform:rotate(359deg)
+    }
+}
+@keyframes fa-spin{
+    0%{
+        -webkit-transform:rotate(0);
+        transform:rotate(0)
+    }
+    100%{
+        -webkit-transform:rotate(359deg);
+        transform:rotate(359deg)
+    }
+}
